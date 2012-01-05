@@ -1,0 +1,112 @@
+/*body {
+	font-family: Arial, Sans-Serif;
+}
+#page-wrap {
+	width: 800px;
+	margin: 25px auto;
+}
+a {
+	text-decoration: none;
+}
+
+p {
+	margin: 15px 0;
+}
+*/
+/* 	LEVEL ONE */
+ul.dropdown {
+	position: relative;
+	vertical-align:middle;
+	width:60px;
+	margin:0;
+	padding:0;
+	font-size:12px;
+}
+ul.dropdown li {
+	font-weight: bold;
+	/*float: left;*/
+/*	zoom: 1;*/
+	height:auto;
+	list-style:none;
+	height:50px;
+}
+ul.dropdown a:hover {
+	color: #fff;
+}
+ul.dropdown a:active {
+	color:#fff;
+	}
+ul.dropdown li a {
+	display: block;
+	padding: 0px 5px;
+	border-right: 0px solid #333;
+	color: #fff;
+}
+/*ul.dropdown li:last-child a {
+	border-right: none;
+}*/ /* Doesn't work in IE */
+ul.dropdown li.hover, ul.dropdown li:hover {
+	background:none;
+	color: black;
+	position: relative;
+}
+ul.dropdown li.hover a {
+	color: #fff;
+}
+ul.dropdown li a.active {
+	color: #fff;
+background-image:url(../images/submenu_active_bg.jpg);
+background-repeat:no-repeat;
+height:53px; 
+width:60px;
+vertical-align: middle;
+padding-top:2px;
+}
+/* 	LEVEL TWO*/
+ul.dropdown ul {
+	width: 165px;
+	visibility: hidden;
+	position:absolute;
+	left: 100%;
+	top:0px;
+	margin:0px;
+	margin-left:-10px;
+	padding:0px;
+	z-index:10;
+/*	background-image:url(../images/submenu_bg_small.jpg);
+	background-repeat:no-repeat;
+	height:70px;*/
+}
+ul.dropdown ul li {
+	font-weight: normal;
+	color: #fff;
+	float:left;
+	height:35px;
+	display:block;
+	margin-top:0px;
+}
+/* IE 6 & 7 Needs Inline Block */
+ul.dropdown ul li a {
+	border-right: none;
+	width: 100%;
+	display:inline-block;
+
+}
+ul.dropdown ul li a:hover {
+	border-right: none;
+	width: 100%;
+	display:inline-block;
+	color:#000;
+}
+/* 	LEVEL THREE*/
+ul.dropdown ul ul {
+	left:150px;
+	top: 0;
+}
+ul.dropdown li:hover > ul {
+	visibility: visible;
+}
+ul.dropdown ul li.bottom {
+	width: 195px;
+	height: 10px;
+}

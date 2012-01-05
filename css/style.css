@@ -1,0 +1,255 @@
+@charset "utf-8";
+/* CSS Document */
+ html, body {
+	background-image:url(../images/bg.jpg);
+	/*background-position:center;
+	background-color:#fff;*/
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:100%;
+	margin:0;
+	padding:0;
+	height:100%;
+/*	min-width: 100%;*/
+	width:100%;
+    top: 0;
+    left: 0;
+	}
+	
+
+img {
+	border:0;
+}
+p {
+	line-height:18px;
+	font-size:80%;
+	text-align:justify;
+	color:#333;
+}
+ table{	line-height:18px;
+	font-size:80%;
+	color:#333;
+}
+h1 { color:#ff0000; font-size:120%;}
+/* Set the position and dimensions of the background image. */
+#page-background {position: fixed; top:0; left:0; width:100%; height:100%;}
+/* Specify the position and layering for the content that needs to appear in front of the background image. Must have a higher z-index value than the background image. Also add some padding to compensate for removing the margin from the 'html' and 'body' tags. */
+#content {position:relative; z-index:1;}
+
+.toplevel {
+	width:100%;
+	height:60px;
+
+}
+.topcontainer {
+	margin-left:auto;
+	margin-right:auto;
+padding-top:13px;
+width:500px;
+	font-size:100%;
+	text-align:center;
+}
+.sitelogo {
+	float:left;
+	width:200px;
+
+}
+.tagline {
+	color:#8c8b8b;
+	margin-top:27px;
+	float:left;
+}
+.logindetails {
+	float:right;
+	margin-top:15px;
+	margin-right:20%;
+	/*position:absolute;*/
+}
+.toplevel ul li {
+	display:block;
+	border-right:0px solid #575757;
+	list-style:none;
+	float:left;
+	padding-top:0px;
+	padding-bottom:0px;
+	padding-left:0px;
+	padding-right:15px;
+	line-height:15px;
+	background-image:url(../images/arrow_red_down.png);
+	background-position:right;
+	background-repeat:no-repeat;
+}
+.toplevel ul li.noborder {
+	border-right:0px solid #575757;
+}
+.toplevel ul li a {
+	display:block;
+	color:#000;
+	text-decoration:none;
+}
+.toplevel ul li a:hover {
+	display:block;
+	color:#000;
+	text-decoration:underline;
+}
+.signin_popup{ position:absolute; border:0px solid #666; padding-top:0px; padding-left:5px; z-index:10000; background-image:url(../images/login_popup_bg.png); width:276px; height:150px;}
+input{	border: none;
+	color: #575757;
+	width:230px;
+background:none;
+max-height:!important 30px;
+}
+.signin_popup .inputbg{padding-left:20px; background-image:url(../images/login_input_bg.png); background-repeat:no-repeat; padding-top:7px;  padding-bottom:5px; height:20px; }
+.signin_popup .submit{ background-image: url(../images/submit_bg.png) ;background-repeat:no-repeat; height:27px; width:60px;text-align:center;}
+.signin_popup .submit_btn{ text-align:center;}
+#signup_container { background-color:#ededed; border:#bbbbbb solid 1px; height:180px; width:570px; margin-left:40px;}
+
+input.signup { width:150px; border: 1px #bbbbbb solid;
+	padding-top:3px;  padding-bottom:3px; 
+background:#fff;}
+#middlecontainer {
+	width:90%;
+	height:70%;
+/*	margin-left:5%;
+	margin-right:5%;*/
+}
+#middlecontainer {float:left; width:100%;}
+#container ul li { width:100%;list-style-image:url(../images/arrow.jpg); }
+#container ul li a.anchor {color:#333;margin-top:11px; margin-bottom:11px;  text-decoration:none; font-weight:bold;font-size:80%;}
+#container ul li.que{ color:#333; text-decoration:none; font-weight:bold; font-size:80%;}
+#container ul li.ans{ color:#333; text-decoration:none; font-weight:normal; text-align:justify; list-style:none; margin-bottom:20px;font-size:80%; }
+a.backtoTop{ font-size:90%; color:#333;}
+#left_container {
+	float:left;
+	width:15%;
+	height:auto;
+	margin-left:3%;
+	padding-top:30px;
+}
+#right_container {
+	float:left;
+	width:80%;
+	height:auto;
+		margin-top:3%;
+}
+#blank {
+	height:300px;
+}
+#wrapper {
+	
+	width:700px;
+min-height:75%;
+margin-left:auto;
+margin-right:auto;
+margin-top:4%;
+
+
+}
+.iconcontainer {
+	float:left;
+	width:225px;
+	background-image:url(../images/v-line.jpg);
+	background-position:right;
+	background-repeat:no-repeat;
+}
+.iconcontainer ul {
+	margin-left:0px;
+}
+.iconcontainer ul li {
+	list-style-type:none;
+	height:150px;
+/*	margin-left:10px;*/
+}
+.iconcontainer ul li a {
+	background-image:none;
+}
+.iconcontainer ul li a:hover{
+	/* background-image:url(../images/submenu_bg.jpg);*/
+}
+.subcategory {
+	text-align:center;
+	width:190px;
+	background-repeat:no-repeat;
+	
+}
+.subcategory ul {
+	float:left;
+	margin-left:-35px;
+}
+.subcategory ul li {
+	float:left;
+	margin-right:0px;
+	height:auto;
+
+}
+.subcategory ul.product_videos {
+		padding-top:20px;
+		margin-left:-42px;
+}
+.subcategory ul.social {
+		padding-top:20px;
+		margin-left:-50px;
+	
+}
+.subcategory ul.aboutus {
+		padding-top:0px;
+		margin-left:-52px;
+}
+.subcategory ul.speednumber {
+	padding-top:31px;}
+.subcategory ul li a:hover {
+	background:none;
+/*background-image:url(../images/submenu_bg.jpg);*/
+}
+/*.popup_product{ cursor:pointer; font-size:12px; height:auto; width:285px; position:relative;top:-200%; left:-52%;}*/
+/*.popup_signup{  cursor:pointer; font-size:12px; height:auto; width:285px; position:relative;top:-8%; left:-40%;}
+*//*.popup_contactus{cursor:pointer;  font-size:12px; height:auto; width:285px; position:relative;top:-25%; left:-50%;}*/
+/*.popup_jobs{ cursor:pointer;  font-size:12px; height:auto; width:285px; position:relative;top:-125%; left:-43%;}*/
+a.more{ text-align:left; text-decoration:none;}
+a.more:hover{ text-decoration:underline;}
+/*.popup_top{ background-image:url(../images/popup_top.png); height:37px; padding-top:15px; padding-left:15px;}*/
+/*.popup_middle{ background-image:url(../images/popup_middle.png); height:auto; padding-left:20px; padding-right:10px; padding-top:5px;}*/
+/*.popup_bottom{ background-image:url(../images/popup_bottom.png); height:32px;}*/
+
+#terms ul li { width:100%;list-style-image:url(../images/arrow.jpg); text-align:left; font-size:90%; margin-left:50px; color:#818181; }
+.operating_system_icon
+{vertical-align:middle;margin-left:250px; float:left;}
+.download_btn{vertical-align:middle;margin-left:10px; float:left; margin-top:30px;}
+.thumbnail_videos { float:left; margin-left:-40px; z-index:-1000;}
+.thumbnail_videos ul { margin-left:0px;}
+.thumbnail_videos ul li { padding:25px; list-style:none; text-align:left;}
+.thumbnail_videos ul li.active{background-image:url(../images/video_active_bg.jpg); background-repeat:no-repeat; background-position:right; padding:25px; z-index:-100;}
+.bottomlevel {
+	width:100%;
+	height:auto;
+	position:fixed;
+	bottom: 10px;
+	left: 0;
+}
+.bottomcontainer {
+	margin-left:auto;
+	margin-right:auto;
+	width:96%;
+	font-size:90%;
+	margin-top:25px;
+}
+.bottomlevel ul li {
+	display:block;
+	border-right:1px solid #575757;
+	list-style:none;
+	float:left;
+	color:#575757;
+	padding-left:5px;
+	padding-right:5px;
+	line-height:12px;
+}
+.bottomlevel ul li.noborder {
+	border-right:0px solid #575757;
+}
+.bottomlevel ul li a {
+	color:#575757;
+	text-decoration:none;
+}
+.bottomlevel ul li a:hover {
+	color:#000;
+	text-decoration:underline;
+}
